@@ -87,7 +87,7 @@ class DeepWriter_Train:
         if not os.path.exists(self.model_dir):
             os.mkdir(self.model_dir)
 
-        basedir = 'GRRNN_WriterIdentification_dataset_'+self.dataset+'_model_'
+        basedir = 'CTE_WriterIdentification_dataset_'+self.dataset+'_model'
         self.logfile= basedir + '.log'
         self.modelfile = basedir
         self.batch_size = 16
