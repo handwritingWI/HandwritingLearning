@@ -1,17 +1,8 @@
-black
-flake8
-ipython
-isort
-jupyterlab
-loguru
-matplotlib
-mkdocs
-notebook
-numpy
-pandas
-pip
-python-dotenv
-scikit-learn
-tqdm
-typer
--e .
+torch>=1.9.0
+matplotlib>=3.4.0
+pillow>=8.2.0
+scipy>=1.6.0
+scikit-learn>=0.24.0
+numpy>=1.19.0
+opencv-python>=4.5.0
+pytorch-grad-cam>=1.2.5
