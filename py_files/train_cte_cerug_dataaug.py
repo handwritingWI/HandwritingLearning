@@ -85,7 +85,7 @@ class ImageTransformer:
         return distorted_image
 
     def perspective_transform(self, image):
-        # Apply perspective transformation to the image
+        # Apply perspective transformation to the image (ZOOMING IN)
         width, height = image.size
         coeffs = self.find_coeffs(
             [(0, 0), (width, 0), (width, height), (0, height)],
@@ -95,6 +95,11 @@ class ImageTransformer:
              (random.randint(0, width // 4), height - random.randint(0, height // 4))]
         )
         return image.transform((width, height), Image.PERSPECTIVE, coeffs, Image.BICUBIC)
+    # Apply ZOOMING OUT
+    def zoom_out_transform(self, image, scale=0.8):
+        width, height = image.size
+        new_width, new_height = int(width * scale), int(height * scale)
+        return image.resize((new_width, new_height), Image.BICUBIC)
 
     def find_coeffs(self, pa, pb):
         # Calculate the coefficients for perspective transformation
@@ -130,6 +135,12 @@ class ImageTransformer:
             perspective_image = self.perspective_transform(image)
             perspective_image_filename = os.path.join(self.folder, imgfile.split('.')[0] + '_2.' + self.imgtype)
             perspective_image.save(perspective_image_filename)
+
+            # Zoom out Transformation
+            zoom_out_image = self.zoom_out_transform(image, scale=0.8) 
+            zoom_out_image_filename = os.path.join(self.folder, imgfile.split('.')[0] + '_3.' + self.imgtype)
+            zoom_out_image.save(zoom_out_image_filename)
+            
 
 
 class DeepWriter_Train:
