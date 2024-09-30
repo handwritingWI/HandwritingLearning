@@ -9,8 +9,8 @@ This repo contains the code and resources for our project focused on Writer Iden
 ## Dataset
 
 The dataset can be downloaded from kaggle. 
-Modern handwritten words, CERUG - https://www.kaggle.com/datasets/adityamajithia/cerug-en
-Historical handwritten words, ICDAR2017 - https://www.kaggle.com/datasets/adityamajithia/icdar17-widewords
+Modern handwritten words, CERUG - https://zenodo.org/records/13858391
+Historical handwritten words, ICDAR2017 - https://zenodo.org/records/13858405
 
 ## Code
 
