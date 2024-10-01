@@ -4,6 +4,7 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
+Github repo link: https://github.com/handwritingWI/HandwritingLearning.git
 This repo contains the code and resources for our project focused on Writer Identification from images of individual handwritten words. We initially based our work on the GR-RNN model (https://github.com/shengfly/writer-identification), but have since enhanced it into a Transformer architecture to achieve better performance. 
 
 ## Dataset
