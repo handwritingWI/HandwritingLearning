@@ -9,8 +9,15 @@ This repo contains the code and resources for our project focused on Writer Iden
 ## Dataset
 
 The dataset can be downloaded from kaggle. 
-Modern handwritten words, CERUG - https://zenodo.org/records/13858391
-Historical handwritten words, ICDAR2017 - https://zenodo.org/records/13858405
+Modern handwritten words, 
+CERUG - https://zenodo.org/records/13858391
+Firemaker - https://zenodo.org/records/14125517
+IAM - https://zenodo.org/records/14125777
+CVL - https://zenodo.org/records/14126045
+
+Historical handwritten words, 
+ICDAR2019 - https://zenodo.org/records/14126413
+ICDAR2017 - https://zenodo.org/records/13858405
 
 ## Code
 
@@ -25,12 +32,15 @@ Download the required datasets and note the file paths.
 Download all the Python scripts in the 'py_files' folder to a single directory.
 
 ### Set Dataset Paths:
-Open the train_cte_cerug.py, train_cte_cerug_dataaug.py, and train_CTE_ICDAR17.py files, and update the train and test paths to point to the correct locations.
+Open the train_cte_cerug.py, train_cte_cerug_dataaug.py, train_cte_validation_run.py, train_cte_validation_run_dataaug.py, train_cte_holdout_set.py, and  train_CTE_ICDAR17.py files, and update the train and test paths to point to the correct locations of the datasets to be used.
 
 ### Run the Code:
 Commands for the execution of the Python scripts from terminal:
 python train_cte_cerug.py
 python train_cte_cerug_dataaug.py
+python train_cte_validation_run.py
+python train_cte_validation_run_dataaug.py
+python train_cte_holdout_set.py
 python train_CTE_ICDAR17.py 
 
 
