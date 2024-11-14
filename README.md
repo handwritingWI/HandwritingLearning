@@ -38,12 +38,12 @@ Open the train_cte_cerug.py, train_cte_cerug_dataaug.py, train_cte_validation_ru
 Commands for the execution of the Python scripts from terminal:
 python <scrpit_name>.py
 Replace <script_name> with one of the following:
-train_cte_cerug.py
-train_cte_cerug_dataaug.py
-train_cte_validation_run.py
-train_cte_validation_run_dataaug.py
-train_cte_holdout_set.py
-train_CTE_ICDAR17.py 
+train_cte_cerug
+train_cte_cerug_dataaug
+train_cte_validation_run
+train_cte_validation_run_dataaug
+train_cte_holdout_set
+train_CTE_ICDAR17
 
 
 ## Project Organization
